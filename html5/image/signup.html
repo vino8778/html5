@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .login{
+        border: 2px solid rgba(225, 211, 211, 0.738);
+        height: 100%;
+        width: 100%;
+        
+        
+        background: linear-gradient(to right ,white,pink); 
+        /* border-radius: 50% 20%;
+         */
+        /* background-image: url(img1.jpg); 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;  */
+        
+
+        
+        
+       }
+       form{
+          display: block;
+          /* box-sizing: border-box;
+         */
+          padding: 40px;
+          width: 50%;
+          height:50%;
+          display: flex;
+          flex-direction: column;
+          /* gap: 5px; */
+          /* background-position:right; */
+       }
+       h1{
+        font-size: larger;
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        text-overflow: clip;
+        text-align: center;
+       }
+       label{
+         font-size: 20px;
+         font-family: bold;
+         letter-spacing: 5px;
+         padding:right ;
+         font-weight: 600;
+         text-transform: uppercase;
+         margin-left: 30px;
+         text-decoration: double;
+
+       }
+       input{
+        height: 60px;
+        line-height: 30px;
+        border-radius: 50px   20px;
+        padding: 2px 4px;
+        background:rgba(225, 211, 211, 0.738);
+        border: 3px solid rgba(225, 211, 211, 0.738) ;
+        justify-content: center;
+        /* gap: 5px; */
+        margin:10px 20px 10px 20px;
+        /* border-width: 3px;
+        */
+
+       }
+       button{
+         height: 60px; 
+         width:25% ;
+         border-radius: 20px;
+         font-weight: lighter;
+         background-color:pink;
+         margin-left: 200px;
+         margin-top: 20px;
+         padding-top: 10px;
+         border-radius: 50px;
+         
+       }
+    </style>
+
+</head>
+<body>
+   <div class="login">
+    <h1> SIGN UP</h1>
+    <form  class="form">
+        <label>username</label>
+        <br>
+        <input type="text"  maxlength="20"/><br>
+        <label>password</label><br>
+        <input type="password" /><br>
+        
+      
+        <label>mobile no</label>
+
+        <input type="number" maxlength="10"/>    
+        <br>
+        <label>DOB</label>
+        <input type="date" />
+        
+        <button>submit</button>
+    </form>
+   </div>
+
+     
+</body>
+</html>
+
+

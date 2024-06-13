@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .back video{
+            width: 100%;
+            margin-top: 10px;
+            
+        }
+        .search{
+            position: relative;
+            left:900px;
+        }
+        .nav{
+            display: flex;
+            
+        }
+        .search  input{
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+           color:  black;
+           text-align: center;
+           font-family: calibri;
+        }
+        .search i{
+            color:black;
+            font-size: 20px;
+            position: relative;
+            right: 40px;
+            font-weight: 900;
+        }
+        .login a i{
+            font-size: 40px;
+            margin-left: 900px;
+            color: black;
+        }
+        .login a i:hover{
+            color: aqua;
+        }
+        .home a i{
+            font-size: 40px;
+            margin-left: 20px;
+            color: black;
+        }
+        .home a i:hover{
+            color: aqua;
+        }
+        .card{
+            display: flex;
+        }
+        .apple{
+            margin-top: 30px;
+            margin-left: 60px;
+            width: 300px;
+            height: 500px;
+            background:white;
+            border-radius: 50px;
+            box-shadow: 0 20px 20px 20px rgb(152, 142, 143);
+        }
+        .apple .rate{
+           display: flex;
+           position: relative;
+           left: 50px;
+           top:50px;
+        }
+        .apple .rate del h4{
+            color: grey;
+            position: relative ;
+            left: 10px;
+        }
+        .apple button{
+            width: 60%;
+            height: 30px;
+            border: none;
+            background-color: #1995AD;
+            color: white;
+            font-size:20px;
+            text-transform: capitalize;
+            position: relative;
+            left: 20%;
+            top:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            border-radius: 50px;
+            
+        }
+        .apple button:hover{
+            background-color:#162B75;
+
+        }
+         .para{
+            display: flex;
+         }
+         .apple .para h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:relative;
+            left: 30px;
+            bottom: 10px;
+         }
+         
+            
+         
+          .cart i{
+           font-size:40px ;
+           margin-left: 20px;
+         }
+         .cart i:hover{
+            color: aqua;
+         }
+         .icon{
+            display: flex;
+         }
+         .icon .icon1 i{
+            font-size: 40px;
+            position: relative;
+            left: 30px;
+            top: 10px;
+            justify-content: space-between;
+            
+         }
+         .icon .icon1 i:hover{
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            font-size: 30px;
+            
+            
+         }
+         .icon .icon2 i{
+            font-size: 40px;
+            position: relative;
+            left: 70px;
+            top: 10px;
+            justify-content: space-between;
+            
+         }
+         .icon .icon2 i:hover{
+            background-color: rgb(255, 0, 106);
+            color: white;
+            border-radius: 50%;
+            font-size: 30px;
+            
+            
+         }
+         .icon .icon3 i{
+            font-size: 40px;
+            position: relative;
+            left:   110px;
+            top: 10px;
+            justify-content: space-between;
+            
+         }
+         .icon .icon3 i:hover{
+            background-color: rgba(255, 0, 64, 0.529);
+            color: white;
+            border-radius: 50%;
+            font-size: 30px;
+         }
+         .apple .sale{
+            background-color: rgba(127, 251, 255, 0.959);
+            color: aliceblue;
+            border-radius: 50px;
+            width: 100px;
+            height:20px;
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            bottom: 300px;
+            left:40px ;
+
+         }
+         .card1{
+            display: flex;
+         }
+         .apple img{
+            width:300px;
+            height: 300px;
+            transition: 1.2s;
+         }
+         .apple img:hover{
+            width: 310px;
+            height: 310px ;
+            transform: scale(.9);
+            border-radius: 50px;
+         }
+      
+         footer{
+  background-color:#162B75;
+}
+.information {
+  display:flex;
+  margin: 50px 0 0 50px;
+ 
+}
+.information .home{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  bottom20px
+}
+.information .home li a{
+  color:white;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-style: normal;
+ font-size: small;
+  
+  
+}
+.information .vk-mobiles{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.information .vk-mobiles li a{
+  color:white;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: small;
+}
+.about {
+  display: grid;
+ margin-left: 100px;
+ list-style: none;
+}
+.about img{
+  position: relative;
+  left: 500px;
+  top: 30px;
+}
+.about p{
+  color: white;
+  position: relative;
+  left: 350px;
+}
+.about a{
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  left: 500px;
+  
+}
+hr{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.copy p{
+  color: white;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.home {
+  list-style: none;
+  
+}
+   .home li a{
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+   }  
+   .vk-mobiles{
+    list-style: none;
+   }
+   .vk-mobiles li a{
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    left: 100px;
+
+   }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+    
+         <div class="search">
+        <input type="search" placeholder="Search Products">
+        <i class="fa fa-search"></i>
+         </div>
+        <div class="login">
+
+            <a href="http://127.0.0.1:5500/index2.html#"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="home">
+            <a href="http://127.0.0.1:5500/mobshop.html"> <i class="fa-solid fa-house"></i></a>
+
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+         </div>
+     
+    </div>
+          
+    
+    <div class="back">
+        <video  autoplay muted loop>
+            <source src="image/apple.mp4">
+        </video>
+    </div>
+    
+                           <!-- card-details -->
+    <div class="card">
+    <div class="apple">
+        <img src="image/i phone 13.jpeg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i Phone 13 </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 56,000.00</h4>
+        <del><h4>RS. 77,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+    <div class="apple">
+        <img src="image/iphone 10.jpeg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i Phone 10 </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 56,000.00</h4>
+        <del><h4>RS. 77,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+    <div class="apple">
+        <img src="image/iphone 14.jpeg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i Phone 14 </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 56,000.00</h4>
+        <del><h4>RS. 77,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+    <div class="apple">
+        <img src="image/iphone 14 plus.jpeg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i Phone 14 plus </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 56,000.00</h4>
+        <del><h4>RS. 77,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+</div> 
+      <!-- 2nd card--details -->
+
+      <div class="card1">
+        <div class="apple">
+            <img src="image/i phone 15 pro.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>Apple i Phone15 pro </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 56,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/i hpone 9.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>Apple i Phone 15 </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 56,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/i phone 13.jpeg">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>Apple i Phone 13 </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 56,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/i phone 13.jpeg">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>Apple i Phone 13 </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+            <div class="rate ">
+            <h4>RS. 56,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >       
+            <button>buy it now</button>    
+        </div>
+
+    </div> 
+    <footer>
+        <div class="information">
+          <ul class="home">
+         <li><a href="#">information</a></li>
+         <li><a href="#">about us</a></li>
+         <li><a href="#">contact us</a></li>
+         <li><a href="#"> terms of service</a></li>
+         <li><a href="#">refund policy</a></li>
+         <li><a href="#">store loction</a></li>
+         <li><a href="#">register</a></li>
+          </ul>
+          <ul class="vk-mobiles">
+            <li><a href="#">vk mobiles</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">mobiles</a></li>
+            <li><a href="#"> tablets</a></li>
+            <li><a href="#">laptops</a></li>
+            <li><a href="#">smart watch</a></li>
+            <li><a href="#">accsesories</a></li>
+            <li><a href="#">airpods</a></li>
+    
+             </ul>
+             <div class="about">
+              <img src="image/Screenshot_2024-05-02_133311-removebg-preview.png">
+              
+              <p>VK MOBILES is a leading multi-brand retail chain for online Mobile Shopping in India.</p> 
+              <a href="mailto:vk5550834@gmail.com">vk5550834@gmail.com  </a>
+                <a href="tel:+91 8778218852">+91 8778218852</a>        
+            </div>
+        </div>
+        <hr>
+        <div class="copy"><p>© 2024,vk Mobiles. All Rights Reserved.</p></div>
+        
+        
+      
+      </footer>
+
+</body>
+</html>

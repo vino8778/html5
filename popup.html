@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="button" value="check eligibility" onclick="checkEligibility()">
+</body>
+<script>
+    function checkEligibility(){
+    //    let userInput=confirm("are u above 18 years")
+    //    if (userInput == true){
+    //     alert("you are eligible")
+    //    }else{
+    //     alert("you are not eligible")
+    //    }
+    //  if (confirm("are u above 18 years")){
+    //     alert("eligible")
+    //  }
+    //  else{
+    //     alert("not")
+    //  }
+
+     let age= prompt("what is your age")
+     if(age ==null || age ==""){
+        alert(" please enter the age")
+        checkEligibility() //recursive function
+     }else{
+     if(age>=18){
+        alert("you are eligible")
+     }else{
+        alert("you are not eligible")
+     }
+    }
+}
+</script>
+</html>

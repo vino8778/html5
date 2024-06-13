@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobiles</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .nav-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav-bar{
+        background-color:#DECBA4;
+        font-family: calibri;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+      }
+      li{
+        list-style: none;
+        display: inline-block;
+      }
+      li a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: larger;
+        text-transform: capitalize;
+        margin-left: 10px;
+      }
+      ul li ul.dropdown li{
+        display: block;
+      }
+      ul li ul.dropdown{
+        width: 10%;
+        background-color: #3E5151;
+        color: grey; 
+        position: absolute;
+        z-index: 999;
+        display: none;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px 0 gray;
+      }
+      ul li .drop:hover{
+        background: transparent;
+      }
+      ul li:hover ul.dropdown{
+        display: block;
+      }
+      .drop{
+        color: grey;
+        font-family: Cambria, Cochin;
+        font-size: medium;
+      }
+      .drop:hover a{
+        background-color: #3E5151;
+      }
+      .back{
+        margin-top: 10px;
+      }
+      h2{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .brand{
+        display: flex;
+        justify-content: center; /* Center the images */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      }
+      .brand img{
+        margin: 10px; /* Add some spacing between images */
+        max-width: 100%; /* Make sure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .hp {
+		background-image: linear-gradient(white, pink);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .laptop {
+        margin: 10px;
+        text-align: center;
+      }
+      .laptop img {
+        max-width: 100%;
+        height: auto;
+      }
+      .content h3 {
+        font-size: medium;
+        color: #3E5151;
+        margin-top: 10px;
+      }
+      .specific {
+        text-align: center;
+      }
+      .specific h5 {
+        margin-top: 5px;
+        line-height: 25px;
+      }
+      .specific h5 p {
+        color: #3E5151;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 5px;
+      }
+      .specific h3 {
+        color: blue;
+      }
+      .rate,
+      .btn {
+        margin-top: 10px;
+      }
+      .hp1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .laptop1 {
+        margin: 10px;
+        text-align: center;
+      }
+      .laptop1 img {
+        max-width: 100%;
+        height: auto;
+      }
+      .content1 h3 {
+        font-size: medium;
+        color: #3E5151;
+        margin-top: 10px;
+      }
+      .specific1 {
+        text-align: center;
+      }
+      .specific1 h5 {
+        margin-top: 5px;
+        line-height: 25px;
+      }
+      .specific1 h5 p {
+        color: #3E5151;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 5px;
+      }
+      .specific1 h3 {
+        color: blue;
+      }
+      .rate1,
+      .btn1 {
+        margin-top: 10px;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 768px) {
+        .nav-bar {
+          justify-content: center; /* Center align navigation */
+        }
+        .nav-div {
+          flex-direction: column; /* Stack items vertically */
+        }
+        .brand img {
+          width: 50%; /* Adjust image size */
+        }
+      }
+    </style>
+</head>
+<body> 
+  <nav class="nav-bar">
+    <div class="nav-div">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/mobshop.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#">Brand</a>
+          <ul class="dropdown"> 
+            <li><a href="#" class="drop">Dell</a></li>
+            <li><a href="#" class="drop">Lenovo</a></li>
+            <li><a href="#" class="drop">Acer</a></li>
+            <li><a href="#" class="drop">Asus</a></li>                    
+            <li><a href="#" class="drop">HP</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="back">
+    <img src="image/Gaming-laptop.jpg" width="100%" height="auto">
+  </div>
+  <h2>Shop by Brand</h2>
+  <div class="brand">
+    <img src="image/apple lap logo - Copy.webp">
+    <img src="image/asus lap logo - Copy.avif">
+    <img src="image/asus lap logos - Copy (2).avif">
+    <img src="image/hp lap logo - Copy.avif">
+  </div>
+  <div class="hp">
+    <div class="laptop">
+      <img src="image/hp laptop.jpeg" width="300px" height="300px">
+      <div class="content">
+        <h3>HP 15 3535 (AMD/ Ryzen 3-7320U/ 8GB/ 512GB SSD/ Win 11/ Silver) Laptop</h3>
+      </div>
+      <div class="rate">
+        <h4>RS. 33,000.00</h4>
+        
+			<del><h4>RS. 49,999.00</h4></del>
+            <button>save20%</button>
+          </div>
+            <div class="btn">
+            <button>buynow</button>
+          </div>
+          </div>
+          <div class="specific">
+            <h3>specification:</h3>
+            <h5>brand:<p>HP</p></h5>
+            <h5>display:<p>39.6 cm (15.6") diagonal, FullHD (1920 x 1080), 
+              micro-edge, BrightView, 250 nits, 45% NTSC</p></h5>
+              <h5>battery life:<p>Up to 7 hours (Based on Usage)</p></h5>
+              <h5>ports:<p>1x SuperSpeed USB Type-C, 2x SuperSpeed USB Type-A, 1x HDMI 1.4b</p></h5>
+              <h5><p></p></h5> 
+              <h5>In the bag:<p>Laptop | Power Adapter | User Guide</p></h5>
+            </div>
+              </div>
+                </div>
+          
+         
+</body>
+</html>

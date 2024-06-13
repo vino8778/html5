@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobiles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: white;  
+      }
+      
+     .back{
+      margin-top: 10px;
+     }
+     h2{
+      font-size: 2rem;
+     text-align: center;
+     margin-top: 10px;
+     }
+     
+     .hp{
+      display: flex;
+      margin-top: 20px;
+      border: none;
+      border-radius: 50px;
+    background-color: #c3cbdc;
+background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+     
+      width: 100%;
+     }
+    .hp img{
+      display: flex;
+      margin-left: 100px;  
+    }
+    .hp .laptop{
+      height: 400px;
+      width: 500px;
+     background-color:white;
+     }
+    .hp .laptop .rate{
+      display: flex;
+      position: relative;
+      left: 100px;
+    }
+    .laptop .rate h4{
+     
+      margin:5px
+    }
+    .laptop .rate button{
+      border: none;
+      color: white;
+      font-weight: ;
+      background-color: pink;
+      margin-left: 5px;
+      border-radius: 50px;
+      width: 100px;
+      height: 20px;
+
+    }
+    .laptop .btn button{
+      color: white;
+      background-color: #162B75;
+    
+      width: 100px;
+      height: 30px;
+      border:none;
+      cursor: pointer;
+    }
+    .laptop .btn{
+      position: relative;
+      top: 5px;
+      left: 180px;
+      cursor: pointer;
+    }
+    .laptop .btn button:hover{
+      background-color: #1995AD;
+      width: 100px;
+      height: 30px;
+      
+    }
+    .content h3{
+      font-size: medium;
+      color: #3E5151;
+      margin-left: 100px;
+    }
+     .hp .specific{
+      position: relative;
+      left:300px;
+      /* display: grid; */
+     }
+     .hp .specific h5{
+      color:black;
+      font-family: calibri;
+      margin-top: 5px;
+      line-height: 25px;
+     }
+     .hp .specific h5 p{
+     color: #3E5151;
+     font-family: 'Times New Roman', Times, serif;
+     margin-top: 5px;
+     }
+     .hp .specific h3{
+      color: blue;
+     }
+     .hp h4{
+      color: black;
+     }
+     .hp del h4{
+      color:grey;
+     }
+     .hp1 .laptop1{
+     
+     } 
+     .hp1{
+      margin-top: 5px;
+      display: flex;
+      border-radius: 50px;
+      background-image: linear-gradient(to left ,white,pink);
+      width: 100%;
+     }
+
+
+     .hp1 .laptop1 img{
+    width: 300px;
+      display: flex;
+      margin-left: 500px;
+     
+     }
+     .hp1 .specific1 h3{
+      color:blue;
+      position: relative;
+      left: 140px;
+     }
+     .hp1 .specific1 h5 p{
+     color: #3E5151;
+     font-family: 'Times New Roman', Times, serif;
+     margin-top: 5px;
+
+      }
+      .hp1 .specific1 h5{
+        font-family: calibri;
+        line-height: 25px;
+        position: relative;
+      left: 200px;
+      }
+     
+    
+      .hp1 .laptop1 .rate1{
+      display: flex;
+      position: relative;
+      left: 500px;
+    }
+    .laptop1 .rate1 h4{
+     
+      margin:5px
+    }
+    
+    .laptop1 .rate1 button{
+      background-color: pink;
+      border: none;
+      border-radius: 50px;
+      color:white;
+      width: 100px;
+      height: 20px;
+      /* position: relative;
+     left: 5px; */
+      
+    }
+    .hp1 .laptop1 .btn1 button{
+      color: white;
+      background-color: #162B75;
+      width: 100px;
+      height: 30px;
+      border:none;
+      cursor: pointer;
+    }
+    .hp1 .laptop1 .btn1 button:hover{
+      background-color:#1995AD ;
+    }
+    .laptop1 .btn1{
+      position: relative;
+      top: 10px;
+      left: 600px;
+     
+    }
+    
+    .content1 h3{
+      font-size: medium;
+      color: #3E5151;
+      margin-left: 400px;
+    }
+    .hp1 del h4{
+      color:grey;
+      margin-left: 5px;
+     }
+     /* Media Queries */
+      @media screen and (max-width: 768px) {
+        .nav-bar {
+          justify-content: center;
+        }
+        .nav-div {
+          flex-direction: column; 
+        }
+        .brand img {
+          width: 50%; 
+        }
+        .back img{
+            width: 375px;
+            height: 120px;
+        }
+        .brand{
+          position: relative;
+          right: 50px;
+        }
+        .brand img{
+          width: 93px;
+        }
+        .specific{
+          display: none;
+        }
+        
+        .specific1{
+          display: none;
+        }
+        .hp1{
+          background: none;
+          
+        }
+        .hp{
+          background: none;
+        }
+        .laptop1{
+          position: relative;
+          right: 460px;
+        }
+        .laptop{
+          position: relative;
+          right: 60px;
+        }
+      } 
+      .search{
+            position: relative;
+            left:900px;
+        }
+        .nav{
+            display: flex;
+            
+        }
+        .search  input{
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+           color:  black;
+           text-align: center;
+           font-family: calibri;
+        }
+        .search i{
+            color:black;
+            font-size: 20px;
+            position: relative;
+            right: 40px;
+            font-weight: 900;
+        }
+        .login a i{
+            font-size: 40px;
+            margin-left: 900px;
+            color: black;
+        }
+        .login a i:hover{
+            color: aqua;
+        }
+        .home a i{
+            font-size: 40px;
+            margin-left: 20px;
+            color: black;
+        }
+        .home a i:hover{
+            color: aqua;
+        }
+    
+        footer{
+  background-color:#162B75;
+}
+.information {
+  display:flex;
+  margin: 50px 0 0 50px;
+ 
+}
+.information .home{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.information .home li a{
+  color:white;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-style: normal;
+ font-size: small;
+  
+  
+}
+.information .vk-mobiles{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.information .vk-mobiles li a{
+  color:white;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: small;
+}
+.about {
+  display: grid;
+ margin-left: 100px;
+ list-style: none;
+}
+.about img{
+  position: relative;
+  left: 500px;
+  top: 30px;
+}
+.about p{
+  color: white;
+  position: relative;
+  left: 350px;
+}
+.about a{
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  left: 500px;
+  
+}
+hr{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.copy p{
+  color: white;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.home {
+  list-style: none;
+}
+   .home li a{
+    text-decoration: none;
+    position: relative;
+    bottom: 20px;
+   }  
+   .vk-mobiles{
+    list-style: none;
+   }
+   .vk-mobiles li a{
+    text-decoration: none;
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+
+   }
+   .laptop img{
+          width: 300px;
+          height: 300px;
+          transition: 1.2s;
+   }
+   .laptop img:hover{
+    width: 310px;
+    height: 310px;
+   }
+    </style>
+</head>
+<body> 
+
+    <div class="nav">
+    
+        <div class="search">
+       <input type="search" placeholder="Search Products">
+       <i class="fa fa-search"></i>
+        </div>
+       <div class="login">
+
+           <a href="http://127.0.0.1:5500/index2.html#"><i class="fa-solid fa-user"></i></a>
+       </div>
+       <div class="home">
+           <a href="http://127.0.0.1:5500/mobshop.html"> <i class="fa-solid fa-house"></i></a>
+
+       </div>
+       <div class="cart">
+           <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    
+   </div>
+  
+              <div class="back">
+                <img src="image/iphone background.jpg" width=1515px height="400px">
+              </div>
+            
+            <div class="hp">
+            <div class="laptop">
+            <img src="image/Apple-Macbook-Air-M2-KeyBoard.webp" >
+            <div class="content">
+              <h3>HP 15 3535 (AMD/ Ryzen 3-7320U/ 8GB/ 512GB SSD/ Win 11/ Silver) Laptop</h2>
+            </div>
+            <div class="rate">
+            <h4>RS. 33,000.00</h4>
+            <del><h4>RS. 49,999.00</h4></del>
+            <button>save20%</button>
+          </div>
+            <div class="btn">
+            <button>buynow</button>
+          </div>
+          </div>
+          <div class="specific">
+            <h3>specification:</h3>
+            <h5>brand:<p>HP</p></h5>
+            <h5>display:<p>39.6 cm (15.6") diagonal, FullHD (1920 x 1080), 
+              micro-edge, BrightView, 250 nits, 45% NTSC</p></h5>
+              <h5>battery life:<p>Up to 7 hours (Based on Usage)</p></h5>
+              <h5>ports:<p>1x SuperSpeed USB Type-C, 2x SuperSpeed USB Type-A, 1x HDMI 1.4b</p></h5>
+              <h5><p></p></h5> 
+              <h5>In the bag:<p>Laptop | Power Adapter | User Guide</p></h5>
+            </div>
+              </div>
+                </div>
+
+          
+           <div class="hp">
+            <div class="laptop">
+            <img src="image/AppleMacBookAirM3-Laptop-Midnight.webp"  width="300px" height="300px">
+            <div class="content">
+              <h3>HP 15 3535 (AMD/ Ryzen 3-7320U/ 8GB/ 512GB SSD/ Win 11/ Silver) Laptop</h2>
+            </div>
+            <div class="rate">
+            <h4>RS. 33,000.00</h4>
+            <del><h4>RS. 49,999.00</h4></del>
+            <button>save20%</button>
+          </div>
+            <div class="btn">
+            <button>buynow</button>
+          </div>
+          </div>
+          <div class="specific">
+            <h3>specification:</h3>
+            <h5>brand:<p>HP</p></h5>
+            <h5>display:<p>39.6 cm (15.6") diagonal, FullHD (1920 x 1080), 
+              micro-edge, BrightView, 250 nits, 45% NTSC</p></h5>
+              <h5>battery life:<p>Up to 7 hours (Based on Usage)</p></h5>
+              <h5>ports:<p>1x SuperSpeed USB Type-C, 2x SuperSpeed USB Type-A, 1x HDMI 1.4b</p></h5>
+              <h5><p></p></h5> 
+              <h5>In the bag:<p>Laptop | Power Adapter | User Guide</p></h5>
+            </div>
+              </div>
+                </div>
+                <div class="hp">
+                  <div class="laptop">
+                  <img src="image/1_da40c058-1dc0-414d-89d8-45c712c443f9.webp"  width="300px" height="300px">
+                  <div class="content">
+                    <h3>HP 15 3535 (AMD/ Ryzen 3-7320U/ 8GB/ 512GB SSD/ Win 11/ Silver) Laptop</h2>
+                  </div>
+                  <div class="rate">
+                  <h4>RS. 33,000.00</h4>
+                  <del><h4>RS. 49,999.00</h4></del>
+                  <button>save20%</button>
+                </div>
+                  <div class="btn">
+                  <button>buynow</button>
+                </div>
+                </div>
+                <div class="specific">
+                  <h3>specification:</h3>
+                  <h5>brand:<p>HP</p></h5>
+                  <h5>display:<p>39.6 cm (15.6") diagonal, FullHD (1920 x 1080), 
+                    micro-edge, BrightView, 250 nits, 45% NTSC</p></h5>
+                    <h5>battery life:<p>Up to 7 hours (Based on Usage)</p></h5>
+                    <h5>ports:<p>1x SuperSpeed USB Type-C, 2x SuperSpeed USB Type-A, 1x HDMI 1.4b</p></h5>
+                    <h5><p></p></h5> 
+                    <h5>In the bag:<p>Laptop | Power Adapter | User Guide</p></h5>
+                  </div>
+                    </div>
+                      </div>
+                      <div class="hp">
+                        <div class="laptop">
+                        <img src="image/1_bf0fedbf-74d5-494a-bfa6-4873c2086d0c.webp"  width="300px" height="300px">
+                        <div class="content">
+                          <h3>HP 15 3535 (AMD/ Ryzen 3-7320U/ 8GB/ 512GB SSD/ Win 11/ Silver) Laptop</h2>
+                        </div>
+                        <div class="rate">
+                        <h4>RS. 33,000.00</h4>
+                        <del><h4>RS. 49,999.00</h4></del>
+                        <button>save20%</button>
+                      </div>
+                        <div class="btn">
+                        <button>buy now</button>
+                      </div>
+                      </div>
+                      <div class="specific">
+                        <h3>specification:</h3>
+                        <h5>brand:<p>HP</p></h5>
+                        <h5>display:<p>39.6 cm (15.6") diagonal, FullHD (1920 x 1080), 
+                          micro-edge, BrightView, 250 nits, 45% NTSC</p></h5>
+                          <h5>battery life:<p>Up to 7 hours (Based on Usage)</p></h5>
+                          <h5>ports:<p>1x SuperSpeed USB Type-C, 2x SuperSpeed USB Type-A, 1x HDMI 1.4b</p></h5>
+                          <h5><p></p></h5> 
+                          <h5>In the bag:<p>Laptop | Power Adapter | User Guide</p></h5>
+                        </div>
+                          </div>
+                            </div>
+                            <div class="hp">
+                              <div class="laptop">
+                              <img src="image/apple laptop 1.webp"  width="300px" height="300px">
+                              <div class="content">
+                                <h3>HP 15s-EQ2305AU (AMD/ Ryzen 5-5500U/ 16GB/ 512GB SSD/ Win 11/ Silver) Laptop</h3>
+                                  
+                              </div>
+                              <div class="rate">
+                              <h4>RS. 33,000.00</h4>
+                              <del><h4>RS. 49,999.00</h4></del>
+                              <button>save20%</button>
+                            </div>
+                              <div class="btn">
+                              <button>buynow</button>
+                            </div>
+                            </div>
+                            <div class="specific">
+                              <h3>specification:</h3>
+                              <h5>brand:<p>HP</p></h5>
+                              <h5>display:<p>39.6 cm (15.6") diagonal, FullHD (1920 x 1080), 
+                                micro-edge, BrightView, 250 nits, 45% NTSC</p></h5>
+                                <h5>battery life:<p>Up to 7 hours (Based on Usage)</p></h5>
+                                <h5>ports:<p>1x SuperSpeed USB Type-C, 2x SuperSpeed USB Type-A, 1x HDMI 1.4b</p></h5>
+                                <h5><p></p></h5> 
+                                <h5>In the bag:<p>Laptop | Power Adapter | User Guide</p></h5>
+                              </div>
+                                </div>
+                                  </div>
+
+                                  <div class="hp">
+                                    <div class="laptop">
+                                    <img src="image/apple laptop 2.webp"  width="300px" height="300px">
+                                    <div class="content">
+                                      <h3>HP 15s-EQ1560AU (AMD/ Ryzen 3-3250U/ 8GB/ 512GB SSD/ Win 11) Laptop</h3>
+                                    </div>
+                                    <div class="rate">
+                                    <h4>RS. 33,000.00</h4>
+                                    <del><h4>RS. 49,999.00</h4></del>
+                                    <button>save20%</button>
+                                  </div>
+                                    <div class="btn">
+                                    <button>buynow</button>
+                                  </div>
+                                  </div>
+                                  <div class="specific">
+                                    <h3>specification:</h3>
+                                    <h5>brand:<p>HP</p></h5>
+                                    <h5>display:<p>39.6 cm (15.6") diagonal, FullHD (1920 x 1080), 
+                                      micro-edge, BrightView, 250 nits, 45% NTSC</p></h5>
+                                      <h5>battery life:<p>Up to 7 hours (Based on Usage)</p></h5>
+                                      <h5>ports:<p>1x SuperSpeed USB Type-C, 2x SuperSpeed USB Type-A, 1x HDMI 1.4b</p></h5>
+                                      <h5><p></p></h5> 
+                                      <h5>In the bag:<p>Laptop | Power Adapter | User Guide</p></h5>
+                                    </div>
+                                      </div>
+                                        </div>
+
+                                      </div>
+                                      <footer>
+                                      <div class="information">
+                                        <ul class="home">
+                                       <li><a href="#">information</a></li>
+                                       <li><a href="#">about us</a></li>
+                                       <li><a href="#">contact us</a></li>
+                                       <li><a href="#"> terms of service</a></li>
+                                       <li><a href="#">refund policy</a></li>
+                                       <li><a href="#">store loction</a></li>
+                                       <li><a href="#">register</a></li>
+                                        </ul>
+                                        <ul class="vk-mobiles">
+                                          <li><a href="#">vk mobiles</a></li>
+                                          <li><a href="#">home</a></li>
+                                          <li><a href="#">mobiles</a></li>
+                                          <li><a href="#"> tablets</a></li>
+                                          <li><a href="#">laptops</a></li>
+                                          <li><a href="#">smart watch</a></li>
+                                          <li><a href="#">accsesories</a></li>
+                                          <li><a href="#">airpods</a></li>
+                                  
+                                           </ul>
+                                           <div class="about">
+                                            <img src="image/Screenshot_2024-05-02_133311-removebg-preview.png">
+                                            
+                                            <p>VK MOBILES is a leading multi-brand retail chain for online Mobile Shopping in India.</p> 
+                                            <a href="mailto:vk5550834@gmail.com">vk5550834@gmail.com  </a>
+                                              <a href="tel:+91 8778218852">+91 8778218852</a>        
+                                          </div>
+                                      </div>
+                                      <hr>
+                                      <div class="copy"><p>© 2024,vk Mobiles. All Rights Reserved.</p></div>
+                                      
+                                      
+                                    
+                                    </footer>
+               
+         
+</body>
+</html>

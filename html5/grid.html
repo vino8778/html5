@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .back img{
+            width: 98.5vw;
+            margin-top: 10px;
+            
+        }
+        
+        
+        .nav{
+            display: flex;
+            
+        }
+        .search{
+           position: relative;
+           left: 800px;
+        }
+        .search input:hover{
+            background-color: grey;
+            border: 1px solid white;
+            color: white;
+        }
+        .search  input{
+            width: 400px;
+            height: 50px;
+            border-radius: 50px;
+           color:  black;
+           text-align: center;
+           font-family: calibri;
+        }
+        .search i{
+            color:black;
+            font-size: 20px;
+            position: relative;
+            right: 40px;
+            font-weight: 900;
+        }
+        .login a i{
+            font-size: 40px;
+            margin-left: 900px;
+            color: black;
+        }
+        .login a i:hover{
+            color: aqua;
+        }
+        .home a i{
+            font-size: 40px;
+            margin-left: 20px;
+            color: black;
+        }
+        .home a i:hover{
+            color: aqua;
+        }
+       
+        .apple{
+            margin-top: 30px;
+            margin-left: 60px;
+            width: 300px;
+            height: 500px;
+            background:white;
+            border-radius: 50px;
+            box-shadow: 0 20px 20px 20px rgb(152, 142, 143);
+        }
+        .apple:hover{
+            background-color: aqua;
+        }
+        .apple .rate{
+           display: flex;
+           position: relative;
+           left: 50px;
+           top:50px;
+        }
+        .apple .rate del h4{
+            color: grey;
+            position: relative ;
+            left: 10px;
+        }
+        .apple button{
+            width: 60%;
+            height: 30px;
+            border: none;
+            background-color: #1995AD;
+            color: white;
+            font-size:20px;
+            text-transform: capitalize;
+            position: relative;
+            left: 20%;
+            top:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            border-radius: 50px;
+            
+        }
+        .apple button:hover{
+            background-color:#162B75;
+
+        }
+         .para{
+            display: flex;
+         }
+         .apple .para h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:relative;
+            left: 30px;
+            bottom: 10px;
+         }
+
+         .icon{
+            display: flex;
+         }
+         .icon .icon1 i{
+            font-size: 40px;
+            position: relative;
+            left: 30px;
+            top: 10px;
+            justify-content: space-between;
+            
+         }
+         .icon .icon1 i:hover{
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            font-size: 30px;
+            
+            
+         }
+         .icon .icon2 i{
+            font-size: 40px;
+            position: relative;
+            left: 70px;
+            top: 10px;
+            justify-content: space-between;
+            
+         }
+         .icon .icon2 i:hover{
+            background-color: rgb(255, 0, 106);
+            color: white;
+            border-radius: 50%;
+            font-size: 30px;
+            
+            
+         }
+         .icon .icon3 i{
+            font-size: 40px;
+            position: relative;
+            left:   110px;
+            top: 10px;
+            justify-content: space-between;
+            
+         }
+         .icon .icon3 i:hover{
+            background-color: rgba(255, 0, 64, 0.529);
+            color: white;
+            border-radius: 50%;
+            font-size: 30px;
+         }
+         .apple .sale{
+            background-color: rgba(127, 251, 255, 0.959);
+            color: aliceblue;
+            border-radius: 50px;
+            width: 100px;
+            height:20px;
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            bottom: 300px;
+            left:40px ;
+
+         }
+         .card1{
+            display: flex;
+         }
+         .apple img{
+            width:300px;
+            height: 300px;
+            border-radius: 50px;
+            transition: 1.2s;
+         }
+         .apple img:hover{
+            width: 310px;
+            height: 310px ;
+            transform: scale(.9);
+           
+         }
+         .vid {
+            
+            margin-top: 50px;
+         }
+         .vid video {
+            width: 100%;
+            height: 100vh;
+            
+         }
+      
+         
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+    
+         <div class="search">
+        <input type="search" placeholder="Search Products">
+        <i class="fa fa-search"></i>
+         </div>
+        <div class="login">
+
+            <a href="http://127.0.0.1:5500/index2.html#"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="home">
+            <a href="http://127.0.0.1:5500/mobshop.html"> <i class="fa-solid fa-house"></i></a>
+         </div>
+
+      
+     
+    </div>
+</div>
+          
+    
+    <div class="back">
+        <img src="image/gadjets background.jpg">
+    </div>
+    
+                           <!-- card-details -->
+    <div class="card">
+    <div class="apple">
+        <img src="image/apple watch 89.jpg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i watch 9 </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 56,000.00</h4>
+        <del><h4>RS. 77,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+    <div class="apple">
+        <img src="image/apple watch 9.jpg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i watch9 pro </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 46,000.00</h4>
+        <del><h4>RS. 77,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+    <div class="apple">
+        <img src="image/apple watch se.jpg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i watch se </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 36,000.00</h4>
+        <del><h4>RS. 67,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+    <div class="apple">
+        <img src="image/apple watch.jpg">
+        <div class="sale"><h6>on sale</h6>
+        </div> 
+        
+        <div class="para">
+            <h2>Apple i watch7 </h2>
+        </div>
+        <div class="icon">
+
+           <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+            <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+            <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+        </div>
+       
+        <div class="rate ">
+        <h4>RS. 43,000.00</h4>
+        <del><h4>RS. 77,000.00</h4></del>
+    </div >
+    
+        <button>buy it now</button>
+
+    </div>
+
+</div> 
+      <!-- 2nd card--details -->
+
+      <div class="card1">
+        <div class="apple">
+            <img src="image/Intex-Smart-Watch-Available.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>Intex-Smart-Watch </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS.999.00</h4>
+            <del><h4>RS. 5,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/boat wave.jpg">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>boat stoam</h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 56,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/smart3.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>boat wave </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS.2,499.00</h4>
+            <del><h4>RS. 7,900.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/smart1 - Copy.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>noise-color-fit </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+            <div class="rate ">
+            <h4>RS. 1,399.00</h4>
+            <del><h4>RS. 7,000.00</h4></del>
+        </div >       
+            <button>buy it now</button>    
+        </div>
+
+    </div> 
+    <div class="vid">
+    <video autoplay muted loop >
+        <source src="image/Sony WH-XB910N Over-ear Headphones.mp4" >
+    </video>
+
+    <div class="card">
+        <div class="apple">
+            <img src="image/air9.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>Apple 3rd generation </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 36,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/air8.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>Apple 4th generation </h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 46,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/aiir7.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2> oneplus lush</h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 6,000.00</h4>
+            <del><h4>RS. 9,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+        <div class="apple">
+            <img src="image/air6.webp">
+            <div class="sale"><h6>on sale</h6>
+            </div> 
+            
+            <div class="para">
+                <h2>boAt-Nirvana-Earbud</h2>
+            </div>
+            <div class="icon">
+    
+               <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+            </div>
+           
+            <div class="rate ">
+            <h4>RS. 43,000.00</h4>
+            <del><h4>RS. 77,000.00</h4></del>
+        </div >
+        
+            <button>buy it now</button>
+    
+        </div>
+    
+    </div> 
+          <!-- 2nd card--details -->
+    
+          <div class="card1">
+            <div class="apple">
+                <img src="image/air5.webp">
+                <div class="sale"><h6>on sale</h6>
+                </div> 
+                
+                <div class="para">
+                    <h2>boult airdopes138 </h2>
+                </div>
+                <div class="icon">
+        
+                   <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                    <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                    <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+                </div>
+               
+                <div class="rate ">
+                <h4>RS.999.00</h4>
+                <del><h4>RS. 5,000.00</h4></del>
+            </div >
+            
+                <button>buy it now</button>
+        
+            </div>
+        
+            <div class="apple">
+                <img src="image/air 4.webp">
+                <div class="sale"><h6>on sale</h6>
+                </div> 
+                
+                <div class="para">
+                    <h2>boat airdopes</h2>
+                </div>
+                <div class="icon">
+        
+                   <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                    <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                    <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+                </div>
+               
+                <div class="rate ">
+                <h4>RS. 56,000.00</h4>
+                <del><h4>RS. 77,000.00</h4></del>
+            </div >
+            
+                <button>buy it now</button>
+        
+            </div>
+        
+            <div class="apple">
+                <img src="image/aidope2.webp">
+                <div class="sale"><h6>on sale</h6>
+                </div> 
+                
+                <div class="para">
+                    <h2>one plus lush </h2>
+                </div>
+                <div class="icon">
+        
+                   <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                    <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                    <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+                </div>
+               
+                <div class="rate ">
+                <h4>RS.2,499.00</h4>
+                <del><h4>RS. 7,900.00</h4></del>
+            </div >
+            
+                <button>buy it now</button>
+        
+            </div>
+        
+            <div class="apple">
+                <img src="image/airpod3.webp">
+                <div class="sale"><h6>on sale</h6>
+                </div> 
+                
+                <div class="para">
+                    <h2> boat airdopes </h2>
+                </div>
+                <div class="icon">
+        
+                   <div class="icon1"> <i class="fa-regular fa-heart"></i></div>
+                    <div class="icon2"><i class="fa-solid fa-eye"></i></div>
+                    <div class="icon3"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+                </div>
+                <div class="rate ">
+                <h4>RS. 1,399.00</h4>
+                <del><h4>RS. 7,000.00</h4></del>
+            </div >       
+                <button>buy it now</button>    
+            </div>
+    
+        </div> 
+</div>
+</body>
+</html>

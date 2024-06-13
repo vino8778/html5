@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<body>
+  
+    <!-- console demo -->
+    <script>
+          
+        //   global scope
+    let a="vino";
+    var c=20;
+    const e=50;
+
+        function welcome(){
+        //    local scope
+        let b=12;
+        
+
+        if(b=12){
+            let d=30;
+            
+            console.log("a=",a,"b=",b,"d=",d)
+           
+
+        }
+        // re assigning values
+
+         a="dont use let key word and use only value";
+      
+       var c="it has been re assigning value";
+       
+       
+            
+            console.log("welcome",a,c,);
+
+        }
+         console.log("C=",c);
+        // console.log("B=",b);
+        welcome()
+    </script>
+</body>
+</html>

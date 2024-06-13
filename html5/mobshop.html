@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mobiles</title>
+    <link rel="icon" href="image/apple.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        *{
+            padding: 0px;
+          margin: 0px;
+          }
+          .vino{
+            margin: 0;
+            padding: 0;
+          }
+         body{
+          background-color:white;/
+          /* background-image:linear-gradient(to right,#1995AD, #A1D6E2, #F1F1F2); */
+          height: 109vh; 
+         }
+                   
+         
+        .navbar{
+             background-color: rgb(57, 184, 199); */
+            font-family: calibri;
+            padding-right: 15px;
+            padding-left: 15px;
+            height: 60px;
+            display: flex;
+           justify-content: left;
+                  
+        }
+        .navdiv{    
+             display: flex;
+            align-items: center; 
+            
+            /* justify-content: space-around; */
+           /* align-items: center; */
+        }       
+      li{
+        list-style: none;
+        display: inline-block;  
+      }
+      li a{
+        color:black;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif ;
+    
+      }
+    
+       .mobil{
+        position: relative;
+        /* /padding: 0 10px; */ */
+      }
+      li .mobil:after{
+        content: ""; 
+        position: absolute;
+        background-color: whitesmoke;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+      }
+      .mobil:hover:after{
+        width: 100%;
+      }
+     ul li ul.dropdown li{
+      /* display: block;  */
+     }
+     ul li ul.dropdown{
+      width: 10%;
+      background-color: rgb(237, 235, 235);
+       position: absolute; 
+      z-index: 999; 
+      display: none;     
+      box-shadow: 0 5px 5px 0 rgb(57, 184, 199);
+      border-radius: 10px; 
+     justify-content:  left;  
+     }
+     ul li .drop:hover{
+      background:  rgb(57, 184, 199);
+      border-radius: 10px;      
+     }
+     ul li:hover ul.dropdown{
+       display: block; 
+     }
+     .drop{
+      color: black;
+      /* display: flex; */
+      justify-content: left;
+      
+     }
+     .offer{
+      display: flex;
+      justify-content: center;
+       margin: 10px; 
+      background-color:black;
+     
+     }
+     .offer h1{
+      color: white;
+      position: relative;
+      right: 250px;
+      padding-bottom: 20px;
+        animation-name: head;
+        animation-duration: 2s;
+        animation-timing-function: 3;
+     }
+    @keyframes head{
+      0%{transform :translateX(800px)}
+    }
+    h1{
+      color: black;
+     margin-left: 40%;
+     margin-top: 20px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    
+    .collect{
+   
+    
+    /* display: flex;
+    padding: 0 0 0 100px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: scroll;
+    }
+    .collect::-webkit-scrollbar{
+      display:none;
+    }
+   
+    
+    .collect .collect-img{
+      height: 200px;
+      width: 200px;
+       border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 30px;
+       border-radius: 50%;
+       margin-bottom: 60px;
+    }
+    .collect .collect-img img{
+      height: 200px;
+      width: 200px;
+      transition: .5s;
+      object-fit: cover;
+    }
+     .collect .collect-img  h3{
+      margin-left: 70px;
+      font-size: larger;
+      font-weight: 600;
+      color: black;
+      text-transform: capitalize;
+      z-index: 2000;
+    } 
+    .trending{
+      text-transform: capitalize;
+      text-shadow: #A1D6E2;
+      font-size: xx-large;
+      font-weight: bolder;
+      margin-left: 10%;
+    }
+    .selling-products{      
+     
+      display: flex;
+      overflow: scroll;
+    }
+    .selling-products::-webkit-scrollbar{
+      display:none;
+    }
+    .products{
+     background-color: #F1F1F2;
+     width: 210px;
+     height: 350px;
+   margin: 20px 0 0 30px;
+     box-shadow: black 0 20px 20px 0;
+    }
+    .products .rate {
+      display: flex;
+      margin: 10px;
+      justify-content: center;
+    }
+    .products .rate h4{
+      margin: 5px;
+    }
+    .products .rate del{
+      color: rgb(186, 185, 185);
+    }
+   
+    .products .buy button{
+      background-color: #162B75;
+      font-family: sans-serif;
+      border: none;
+      color: #F1F1F2;
+      position: relative;
+      top: 10px;
+      left: 50px;
+      height: 30px;
+      width: 100px;
+    }
+    .products .buy button:hover{
+      background-color: #1995AD;
+      border-radius: 50px;
+      transition: 1s;
+    }
+    .products h3{
+      color: #1995AD;
+     display: flex;
+     justify-content: center;
+    }
+    form{
+      position: relative;
+       top :50%;
+      left: 90%; 
+      transform: translate(-50%,-50%);
+      transition: all 1s;
+      width: 50px;
+      height: 50px;
+       box-sizing: border-box;
+       border-radius: 25px;
+       background-color: white;
+       border: 1px solid white;
+       padding: 5px;
+       /* margin-right: 50%; */
+       display: flex;
+       justify-content: right;
+    }
+    input{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 42.5px;
+      line-height: 30px;
+      outline: 0;
+      border:0;
+      display :none;
+      font-size: 1em;
+      border-radius: 20px;
+      padding: 0 20px;
+    }
+    .fa {
+      box-sizing: border-box;
+      padding: 10px;
+      width: 42.5px;
+      height: 42.5px;
+      position: absolute;
+      top:0;
+      right: 0;
+      border-radius: 50%; 
+      color: #030303;
+      text-align: center;
+      font-size: 1.2em;
+      transform: all 1s;
+
+    }
+  form:hover{
+
+    width: 300px;
+    cursor: pointer;
+  }
+  form:hover input{
+     display: block; 
+  }
+  form:hover .fa{
+    background: #1995AD;
+  }
+  .navbar .search{
+   position: absolute;
+   right: 200px;
+   top: 30px;
+  }
+  h2{
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top:40px;
+  }
+  .logo-img{
+    display:flex;
+    
+   
+  }
+  .logo-img img{
+    width: 100px;
+    height: 30px;
+     margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px; 
+    overflow: scroll;
+    transition: .3s;
+   
+  }
+   .logo-img .logo:hover{
+    width: 120px;
+    height: 40px;
+    transform: scale(1.1);
+    
+  }
+  .collect img:hover{
+    width: 210px;
+  }
+  .selling-products .products .star i{
+   position: relative;
+   left: 60px;
+   color: blue;
+  }
+footer{
+  background-color:#162B75;
+}
+.footer-1{
+  display: flex;
+}
+.footer img{
+  width: 50px;
+  height:50px;
+  margin:50px 0 0 150px;
+ 
+}
+
+.footer h6{
+  margin:30px 0 0 140px;
+  font-weight: bolder;
+  font-size: 1em;
+  color: white;
+
+}
+.footer p{
+  margin-top: 30px;
+  margin-left: 130px;
+  font-weight: lighter;
+  color: white;
+
+}
+.vino .navbar .login a i {
+  position: relative;
+  left: 1450px;
+  font-size: 30px;
+  top: 13px;
+  color: red;
+}
+.background-image{
+  animation-name: image;
+}
+.vino .background-image img{
+  width: 100%;
+}
+@media screen and (max-width:750px)  {
+  .vino .background-image img{
+    width: 950px;
+  }
+  .vino .navbar .login a i{
+    position: relative;
+    left: 900px;
+  }
+  .collect{
+   
+    overflow: hidden;
+  }
+  .selling-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+   .logo-img {
+    overflow: hidden;
+  }
+  footer{
+    height: 20px;
+  }
+}
+.information {
+  display:flex;
+  margin: 50px 0 0 50px;
+ 
+}
+.information .home{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.information .home li a{
+  color:white;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: small;
+  
+  
+}
+.information .vk-mobiles{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.information .vk-mobiles li a{
+  color:white;
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: small;
+}
+.about {
+  display: grid;
+ margin-left: 100px;
+}
+.about img{
+  position: relative;
+  left: 500px;
+  top: 30px;
+}
+.about p{
+  color: white;
+  position: relative;
+  left: 350px;
+}
+.about a{
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  left: 500px;
+  
+}
+hr{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.copy p{
+  color: white;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+
+
+    </style> 
+   
+</head>
+<body>
+    
+    <div  class="vino">
+     
+       <nav class="navbar">
+        <div class="search">
+        <form action="">
+         
+          <input type="search" placeholder="type to search">
+          <i class="fa fa-search"></i>
+          </div>
+          <div class="login">
+            <a href="http://127.0.0.1:5500/index2.html#"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </form> 
+
+        <div class="navdiv">
+          
+         
+         <ul>
+          
+             <li><a class="mobil" href="#" >home</a></li>
+             <li><a class="mobil" href="#" >about</a></li>
+             <li><a class="mobil" href="#" >contact</a></li>
+             <li><a  href="#" >products</a>
+             <ul class="dropdown"> 
+
+              <li><a class="drop" href="http://127.0.0.1:5500/apple.html" > mobiles</a></li>
+              <li><a class="drop" href="http://127.0.0.1:5500/tablets.html"  >tablets</a></li>
+              <li><a class="drop" href="http://127.0.0.1:5500/laptop.html" >laptops</a></li>
+              <li><a  class="drop"href="http://127.0.0.1:5500/grid.html" >gadjets</a></li>
+            </li>
+             </ul>
+       </div>
+         </nav>
+         <div class="offer">
+          <h1>exclusive offers for SBI credit cards  ! </h1>
+        </div>
+        <div class="background-image">
+          <img src="image/back.jpg">
+        </div>
+
+        <h1>shop by collections</h1>
+        
+        <div class="collect">
+      <div  class="collect-img">
+        <img src="image/asus tuf.png"  >
+       <h3>laptops</h3>
+      </div>
+      <div  class="collect-img">
+        <img src="image/i phone 13.jpeg"  >
+        <h3>mobiles</h3>
+      </div>
+      <div  class="collect-img">
+        <img src="image/iPad-10thGen-.jpeg"  >
+        <h3>tablets</h3>
+      </div>
+      <div class="collect-img">
+        <img src="image/boAt-Nirvana-Ion-Earbud-494249958-i-1-1200Wx1200H-300Wx300H (1).jpeg"  >
+        <h3>airdopes</h3>
+      </div>
+      <div  class="collect-img">
+        <img src="image/apple watch.jpg"  >
+        <h3>smart watches</h3>
+      </div>
+      <div  class="collect-img">
+        <img src="image/sony speker.jpg" >
+        <h3>speakers</h3>
+      </div>
+    </div>
+
+    <h1 class="trending"> top selling products</h1>
+    <div class="selling-products">
+      <div class="products">
+      <img src="image/Vivo-X100-Blue.jpeg"  width="200px" height="200px">
+      <h3> vivo x100</h3>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="rate">
+        <h4>RS. 33000</h4>
+        <del><h4>RS. 50000</h4></del>
+      </div>
+      <div class="buy">
+        <button>BUY NOW</button>
+      </div>
+    </div>
+    <div class="products">
+      <img src="image/apple watch 9.jpg"  width="200px" height="200px">
+      <h3>apple watch 9</h3>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="rate">
+        <h4>RS.44000</h4>
+        <del><h4>RS. 60000</h4></del>
+      </div>
+      <div class="buy">
+        <button>BUY NOW</button>
+      </div>
+    </div>
+    <div class="products">
+      <img src="image/Dell-Gaming-Laptop-Carbon-Black-494268179-i-1-1200Wx1200H-300Wx300H.jpeg"  width="200px" height="200px">
+      <h3>dell gaming</h3>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="rate">
+        <h4>RS. 55000</h4>
+        <del><h4>RS. 70000</h4></del>
+      </div>
+      <div class="buy">
+        <button>BUY NOW</button>
+      </div>
+    </div>
+    <div class="products">
+      <img src="image/vivo v29.jpeg"  width="200px" height="200px">
+      <h3> vivo v29</h3>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="rate">
+        <h4>RS. 30000</h4>
+        <del><h4>RS.44000</h4></del>
+      </div>
+      <div class="buy">
+        <button>BUY NOW</button>
+      </div>
+    </div>
+    <div class="products">
+      <img src="image/Lenovo-4XIN-IdeaPadFlex5-493838695-i-1-1200Wx1200H-300Wx300H.jpeg"  width="200px" height="200px">
+      <h3>lenovo-ideapad</h3>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+         </div>
+         <div class="rate">
+          <h4>RS. 60000</h4>
+          <del><h4>RS. 80000</h4></del>
+        </div>
+        <div class="buy">
+          <button>BUY NOW</button>
+        </div>
+    </div> 
+    <div class="products">
+      <img src="image/boat airdopes.jpg"  width="200px" height="200px">
+      <h3> boat airdopes</h3>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="rate">
+          <h4>RS. 1299</h4>
+          <del><h4>RS. 2999</h4></del>
+          
+        </div>
+        <div class="buy">
+          <button>BUY NOW</button>
+        </div>
+    </div>
+    <!-- <div class="products">
+      <img src="image/apple watch 89.jpg"  width="200px" height="200px">
+      <h3></h3>
+    </div> -->
+
+  </div>
+  <h2>shop by brand</h2>
+  <div class="logo-img">
+    <!-- <img class="logo" src="image/apple-logo-removebg-preview.png" >
+    <img class="logo" src="image/mi_logo-removebg-preview.png">
+    <img class="logo" src="image/hp_logo-removebg-preview.png" >
+    <img class="logo" src="image/1+_logo-removebg-preview.png" >
+    <img class="logo" src="image/oppo_logo-removebg-preview.png" >
+    <img class="logo" src="image/samsung_logo-removebg-preview.png" >
+    <img class="logo" src="image/sony_logo-removebg-preview.png" >
+    <img class="logo" src="image/vivo_logo-removebg-preview.png" > -->
+      
+    <img src="image/apple new.webp" alt="" class="logo">
+    <img src="image/samsung new.webp" alt="" class="logo">
+    <img src="image/Oneplus_new.avif" alt="" class="logo">
+    <img src="image/Nokia_new.avif" alt="" class="logo">
+    <img src="image/Vivo new.avif" alt="" class="logo">
+    <img src="image/HP_9new.avif" alt="" class="logo">
+    <img src="image/sony new.avif" alt="" class="logo">
+    <img src="image/dell new.avif" alt="" class="logo">
+    <img src="image/oppo new.avif" alt="" class="logo">
+    </div>
+  </div>
+  <footer>
+    <div class="footer-1">
+      <div class="footer">
+        <img src="image/truck - Copy.jpg">
+        <h6>Free shipping</h6>
+        <p>on order above ₹499</p>
+      </div>
+      <div class="footer">
+        <img src="image/currency.jpg">
+        <h6>100% Genuine</h6>
+        <p>we only sell genuine products</p>
+      </div>
+      <div class="footer">
+        <img src="image/suport.webp">
+        <h6>suuport</h6>
+        <p>call:+91 8778218852</p>
+        </div>
+      <div class="footer">
+        <img src="image/security-payment.webp">
+        <h6>Safe payment</h6>
+        <p>protect online payment</p>
+      </div>
+      <div class="footer">
+        <img src="image/delivery_1.jpg">
+        <h6>door step delivery</h6>
+        <p>last mile delivery</p>
+      </div>
+    </div>
+    <div class="information">
+      <ul class="home">
+     <li><a href="#">information</a></li>
+     <li><a href="#">about us</a></li>
+     <li><a href="#">contact us</a></li>
+     <li><a href="#"> terms of service</a></li>
+     <li><a href="#">refund policy</a></li>
+     <li><a href="#">store loction</a></li>
+     <li><a href="#">register</a></li>
+      </ul>
+      <ul class="vk-mobiles">
+        <li><a href="#">vk mobiles</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">mobiles</a></li>
+        <li><a href="#"> tablets</a></li>
+        <li><a href="#">laptops</a></li>
+        <li><a href="#">smart watch</a></li>
+        <li><a href="#">accsesories</a></li>
+        <li><a href="#">airpods</a></li>
+
+         </ul>
+         <div class="about">
+          <img src="image/Screenshot_2024-05-02_133311-removebg-preview.png">
+          
+          <p>VK MOBILES is a leading multi-brand retail chain for online Mobile Shopping in India.</p> 
+          <a href="mailto:vk5550834@gmail.com">vk5550834@gmail.com  </a>
+            <a href="tel:+91 8778218852">+91 8778218852</a>        
+        </div>
+    </div>
+    <hr>
+    <div class="copy"><p>© 2024,vk Mobiles. All Rights Reserved.</p></div>
+    
+    
+  
+  </footer>
+</body>
+</html>
